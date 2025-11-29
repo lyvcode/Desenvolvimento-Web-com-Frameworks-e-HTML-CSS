@@ -1,0 +1,157 @@
+Projeto **Ópera – Sweet & Chocolate**
+
+## 1. Estrutura Geral do Projeto
+
+**Decisão:** Construir o site utilizando HTML5, CSS3 tradicional e uma página complementar estilizada com Bootstrap.
+
+**Motivação:**
+
+* Garantir leveza e carregamento rápido para usuários de dispositivos móveis.
+* Evitar dependência de frameworks complexos enquanto o produto ainda está em fase inicial.
+* Permitir fácil manutenção e contribuição futura por desenvolvedores iniciantes.
+
+**Benefícios:**
+* Redução de custos e complexidade.
+* Facilidade para implementação futura de responsividade e melhorias de UI.
+## 2. Organização de Pastas
+
+**Decisão:**
+
+```
+/index.html
+/orderopera.html
+/css/opera.css
+/images/
+```
+
+**Motivação:** Manter estrutura objetiva conforme boas práticas front-end.
+
+**Benefícios:**
+
+* Separação clara entre conteúdo (HTML), estilo (CSS) e mídia (imagens).
+* Facilita manutenção e ampliação do projeto.
+
+---
+
+## 3. Layout e Identidade Visual
+
+### 3.1. Header e Navegação
+
+**Decisão:** Criar menu fixo simples com logo e navegação horizontal.
+
+**Motivação:**
+
+* Manter foco no produto.
+* Seguir estética minimalista que combina com o conceito premium da marca.
+
+**Benefícios:**
+
+* Navegação intuitiva.
+* Identidade visual reforçada por paleta harmônica (#f3f1ee, tons chocolate e dourado).
+
+---
+
+## 4. Seção Hero (Banner Principal)
+
+**Decisão:** Usar imagem de fundo via CSS com *cover* e *center*.
+
+**Motivação:**
+
+* Garantir adaptação automática em telas diferentes.
+* Destacar o slogan “Ópera Sweets & Chocolate”.
+
+**Benefícios:**
+
+* Experiência visual marcante.
+* Foco no CTA principal (“Fazer pedido”).
+
+---
+
+## 5. Grid de Produtos
+
+**Decisão:** Utilizar **CSS Grid** para organizar os cards.
+
+**Motivação:**
+
+* Responsividade simples sem frameworks adicionais.
+* Melhor controle sobre alinhamento e espaçamento.
+
+**Benefícios:**
+
+* Layout moderno e limpo.
+* Cards leves com efeito *hover* para maior interatividade.
+
+---
+
+## 6. Formulário de Pedidos (orderopera.html)
+
+### 6.1. Uso do Bootstrap 5
+
+**Decisão:** Utilizar apenas o Bootstrap na página do formulário.
+
+**Motivação:**
+
+* Facilitar formatação de campos, grids, containers e classes utilitárias.
+* Aumentar acessibilidade e responsividade com pouco esforço.
+* Separar responsabilidades: site visual estático + página funcional de formulário.
+
+**Benefícios:**
+
+* Layout profissional e uniforme.
+* Menos código CSS manual.
+* Menor probabilidade de problemas de responsividade.
+
+---
+
+## 7. Decisões de UX
+
+**Principais escolhas:**
+
+* Botão claro e destacado para envio do pedido.
+* Campos de formulário organizados em duas colunas quando possível.
+* Placeholder explicativos para orientar o usuário.
+* Uso de sombras e cantos arredondados para reforçar elegância do design.
+
+---
+## 8. Acessibilidade
+
+**Decisões adotadas:**
+
+* Todos os textos relevantes dentro de elementos semânticos.
+* Labels associados a inputs para leitores de tela.
+* Contraste adequado em botões.
+
+---
+
+## 9. Próximos Passos (Roadmap Técnico)
+
+* Implementação de backend em **Node.js + Express** para receber pedidos.
+* Criação de API para produtos e catálogo.
+* Migração progressiva para framework moderno (Next.js ou React).
+* Implementação de testes E2E com Playwright.
+* Pipeline de CI/CD para deploy automático.
+* Pagamentos integrados (Pix, Cartão via API de terceiros).
+
+---
+
+## 10. Justificativa Geral do Stack
+
+| Tecnologia                 | Justificativa                                            |
+| -------------------------- | -------------------------------------------------------- |
+| **HTML5**                  | Base leve e universal.                                   |
+| **CSS3**                   | Flexível, ideal para protótipo visual.                   |
+| **Bootstrap 5**            | Mais produtividade em formulários e layouts responsivos. |
+| **Imagens estáticas**      | Reduz complexidade e tamanho do projeto.                 |
+
+---
+
+## 11. Conclusão
+
+O conjunto de decisões técnicas adotadas favorece:
+
+* simplicidade,
+* escalabilidade futura,
+* boa aparência visual,
+* facilidade de evolução.
+
+Este ADR garante clareza ao projeto e serve como base para novos desenvolvedores compreenderem a lógica por trás do código.
